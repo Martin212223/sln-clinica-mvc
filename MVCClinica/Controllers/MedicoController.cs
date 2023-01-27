@@ -131,7 +131,7 @@ namespace MVCClinica.Controllers
         }
 
         [HttpPost]
-        public ActionResult EditConfirmed(Medico medico)
+        public ActionResult EditConfirmed(int id, Medico medico)
         {
 
             if (ModelState.IsValid)
