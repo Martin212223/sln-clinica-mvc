@@ -19,12 +19,11 @@ namespace MVCClinica.Controllers
 
         }
 
+        [HttpGet]
         private Medico TraerUno(int id)
         {
             return context.Medicos.Find(id);
         }
-
-
 
         [HttpGet]
         public IActionResult Index()
@@ -131,7 +130,7 @@ namespace MVCClinica.Controllers
         }
 
         [HttpPost]
-        public ActionResult EditConfirmed(int id, Medico medico)
+        public ActionResult EditConfirmed(Medico medico)
         {
 
             if (ModelState.IsValid)
@@ -149,7 +148,6 @@ namespace MVCClinica.Controllers
             }
 
         }
-
 
     }
 }
