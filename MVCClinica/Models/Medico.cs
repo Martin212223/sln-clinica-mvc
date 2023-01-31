@@ -15,8 +15,9 @@ namespace MVCClinica.Models
         [Required]
         public string Apellido { get; set; }
 
-        [RegularExpression("@([A]{2})+([1-9]{4})")]
-        public int Matricula { get; set; }
+        //[RegularExpression("@([A]{2})+([1-9]{4})")]
+        [RegularExpression("[a-zA-Z]{2}[1-9]{4}$")]
+        public string Matricula { get; set; }
 
     }
 

@@ -3,15 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using MVCClinica.Data;
 using MVCClinica.Models;
 using System.Linq;
-using System.Security.Policy;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MVCClinica.Controllers
 {
     public class MedicoController : Controller
     {
-
         private readonly DBClinicaMVCContext context;
-
 
         public MedicoController(DBClinicaMVCContext context)
         {
@@ -71,10 +69,11 @@ namespace MVCClinica.Controllers
             }
             else
             {
-                return View(medico);
+                return View("Delete", medico);
             }
         }
 
+        [ActionName("Delete")]
         [HttpPost]
         public ActionResult DeleteConfirmed(int id)
         {
@@ -109,7 +108,7 @@ namespace MVCClinica.Controllers
             }
             else
             {
-                return View(medico);
+                return View("Detail", medico);
             }
 
         }
@@ -125,29 +124,33 @@ namespace MVCClinica.Controllers
             }
             else
             {
-                return View(medico);
+                return View("Edit", medico);
             }
         }
 
+        [ActionName("Edit")]
         [HttpPost]
         public ActionResult EditConfirmed(Medico medico)
         {
 
-            if (ModelState.IsValid)
-            {
-                context.Entry(medico).State = EntityState.Modified;
+            //if (ModelState.IsValid)
+            //{
+            //    context.Entry(medico).State = EntityState.Modified;
 
-                context.SaveChanges();
+            //    context.SaveChanges();
 
-                return RedirectToAction("Index");
-                
-            }
-            else
-            {
-                return View(medico);
-            }
+            //    return RedirectToAction("Index");
+
+            //}
+            //else
+            //{
+            //    return View(medico);
+            //}
+
+            context.Entry(medico).State = EntityState.Modified;
+            context.SaveChanges();
+            return RedirectToAction("Index");
 
         }
-
     }
 }
