@@ -26,9 +26,9 @@
                 <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
                 <td>@Html.DisplayFor(modelItem => item.Matricula)</td>
                 <td>
-                    @Html.ActionLink("Detalle", "Details", "Medico", new{id = item.IdMedico})
-                    @Html.ActionLink("Eliminar", "Delete", "Medico", new{id = item.IdMedico})
-                    @Html.ActionLink("Editar", "Edit", "Medico", new{id = item.IdMedico})
+                    @Html.ActionLink("Detalle", "Details", "Medico", new{id = item.Id})
+                    @Html.ActionLink("Eliminar", "Delete", "Medico", new{id = item.Id})
+                    @Html.ActionLink("Editar", "Edit", "Medico", new{id = item.Id})
                 </td>
             </tr>
 

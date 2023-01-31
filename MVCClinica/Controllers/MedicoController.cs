@@ -124,7 +124,7 @@ namespace MVCClinica.Controllers
             }
             else
             {
-                return View("Edit", medico);
+                return View(medico);
             }
         }
 
@@ -133,24 +133,33 @@ namespace MVCClinica.Controllers
         public ActionResult EditConfirmed(Medico medico)
         {
 
-            //if (ModelState.IsValid)
-            //{
-            //    context.Entry(medico).State = EntityState.Modified;
+            if (ModelState.IsValid)
+            {
+                context.Entry(medico).State = EntityState.Modified;
 
-            //    context.SaveChanges();
+                context.SaveChanges();
 
-            //    return RedirectToAction("Index");
+                return RedirectToAction("Index");
 
-            //}
-            //else
-            //{
-            //    return View(medico);
-            //}
-
-            context.Entry(medico).State = EntityState.Modified;
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(medico);
+            }
 
         }
+
+
+
+
+
+
+
+
+
+
+        //context.Entry(medico).State = EntityState.Modified;
+        //context.SaveChanges();
+        //return RedirectToAction("Index");
     }
 }

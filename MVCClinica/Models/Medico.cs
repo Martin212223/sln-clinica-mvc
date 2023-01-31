@@ -6,8 +6,7 @@ namespace MVCClinica.Models
     [Table("Medico")]
     public class Medico
     {
-        [Key]
-        public int IdMedico { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Nombre { get; set; }
