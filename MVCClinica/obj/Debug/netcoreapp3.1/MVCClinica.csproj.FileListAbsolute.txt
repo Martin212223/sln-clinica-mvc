@@ -73,8 +73,8 @@ C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Create.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Delete.cshtml.g.cs
-C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Detail.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Edit.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Index.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\MVCClinica.RazorTargetAssemblyInfo.cs
 C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\MVCClinica.Views.pdb
+C:\Users\Alternativa\Desktop\Último curso\tp grupal 27-1\SLNClinica\MVCClinica\obj\Debug\netcoreapp3.1\Razor\Views\Medico\Details.cshtml.g.cs

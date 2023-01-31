@@ -9,12 +9,13 @@ namespace MVCClinica.Models
         public int Id { get; set; }
 
         [Required]
+        [Column(TypeName = "varchar(50)")]
         public string Nombre { get; set; }
 
         [Required]
+        [Column(TypeName = "varchar(50)")]
         public string Apellido { get; set; }
 
-        //[RegularExpression("@([A]{2})+([1-9]{4})")]
         [RegularExpression("[a-zA-Z]{2}[1-9]{4}$")]
         public string Matricula { get; set; }
 

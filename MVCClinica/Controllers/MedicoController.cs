@@ -108,7 +108,7 @@ namespace MVCClinica.Controllers
             }
             else
             {
-                return View("Detail", medico);
+                return View("Details", medico);
             }
 
         }
@@ -148,18 +148,5 @@ namespace MVCClinica.Controllers
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-        //context.Entry(medico).State = EntityState.Modified;
-        //context.SaveChanges();
-        //return RedirectToAction("Index");
     }
 }
