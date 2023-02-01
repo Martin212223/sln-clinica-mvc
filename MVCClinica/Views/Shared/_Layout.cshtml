@@ -9,25 +9,34 @@
 
 </head>
 <body>
+
     <div id="header">
         <h1>Disposición Médicos</h1>
     </div>
+
     <div id="menu">
         @Html.ActionLink("Home","Index","Home")
         @Html.ActionLink("Médicos","Index","Medico")
     </div>
+
     <div id="sidebaruno">
-        <img src="https://elmedicointeractivo.com/wp-content/uploads/2022/05/gremio-medico-se-defiende--e1652261255864.jpg" alt="Paris">
+        <img id="img1" src="https://elmedicointeractivo.com/wp-content/uploads/2022/05/gremio-medico-se-defiende--e1652261255864.jpg" alt="Paris">
         <p>Profesionales de confianza</p>
+        <img id="img2" src="https://us.123rf.com/450wm/sylverarts/sylverarts2008/sylverarts200800157/sylverarts200800157.jpg?ver=6" alt="logo-medicina" />
+        <img id="img3" src="https://http2.mlstatic.com/D_NQ_NP_751683-MLA49578525625_042022-O.webp" alt="estetoscopio" />
     </div>
+
     <div id="content">
         @RenderBody()
     </div>
+
     <div id="sidebardos">
         <p>Los mejores medicos de Buenos Aires <br /> avenida de mayo 2234</p>
     </div>
+
     <div id="footer">
         <p>info@DispMedicos.com</p>
     </div>
+
 </body>
 </html>

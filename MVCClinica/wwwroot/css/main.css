@@ -30,8 +30,8 @@
     grid-area: 2 / 3 / 3 / 4;
 }
 
-img {
-    width: 400px;
-    height: 400px;
-    margin-top: 10px;
+#img1, #img2, #img3 {
+    width: 200px;
+    height: auto;
+    margin: 1rem;
 }
